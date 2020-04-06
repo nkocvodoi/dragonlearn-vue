@@ -59,7 +59,7 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 .topmenu__back {
-  background-color: #dea360;
+  background-color: #929292;
   color: #fff;
 }
 
