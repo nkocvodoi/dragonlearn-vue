@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark topmenu__back">
       <div class="container">
         <a class="navbar-brand topmenu__logo" href="#">
-          DrangonLearn.in
+          DragonLearn.in
           <font-awesome-icon icon="dragon" />
         </a>
         <button
@@ -24,7 +24,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link topmenu_link" href="#">About</a>
+              <a class="nav-link topmenu_link" href="#">
+                About
+                </a>
             </li>
           </ul>
           <div class="my-2 my-lg-0 d-flex user justify-content-center align-items-center">

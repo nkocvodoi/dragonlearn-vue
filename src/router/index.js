@@ -1,7 +1,7 @@
 import UpAndDown from "../containers/UpAndDown"
 import Vue from 'vue'
 import Router from 'vue-router'
-
+import MoveObjectsUpOrDown from "../containers/MoveObjectsUpOrDown"
 
 Vue.use(Router)
 
@@ -18,11 +18,11 @@ const router = new Router({
     {
       path: "/geometry",
       component: UpAndDown,
-      children: [
-        {
-          path: ""
-        }
-      ]
+
+    },
+    {
+      path: "/move-the-object-up-or-down-(part-2)",
+      component: MoveObjectsUpOrDown
     },
     {
       path: "/measurement", component: null
