@@ -1,18 +1,37 @@
 <template>
   <div class="sidebar">
-    <h4 class="text-left">
-      My courses
-      <span>
-        <font-awesome-icon icon="angle-right" />
-      </span>
-    </h4>
-    <nav class="sidebar__menu text-left">
-      <router-link to="/geometry" class="sidebar__link" active-class="sidebar__link-active">Geometry</router-link>
-      <router-link to="/numbers" class="sidebar__link" active-class="sidebar__link-active">Numbers</router-link>
-      <router-link to="/operations" class="sidebar__link" active-class="sidebar__link-active">Operations</router-link>
-      <router-link to="/measurement" class="sidebar__link" active-class="sidebar__link-active">Measurement</router-link>
-      <router-link to="/secret-lab" class="sidebar__link" active-class="sidebar__link-active">Secret Lab</router-link>
-    </nav>
+    <div>
+      <h4 class="text-left">
+        My courses
+        <span>
+          <font-awesome-icon icon="angle-right" />
+        </span>
+      </h4>
+      <nav class="sidebar__menu text-left">
+        <router-link to="/numbers" class="sidebar__link" active-class="sidebar__link-active">Numbers</router-link>
+        <router-link
+          to="/operations"
+          class="sidebar__link"
+          active-class="sidebar__link-active"
+        >Operations</router-link>
+        <router-link
+          to="/geometry"
+          class="sidebar__link"
+          active-class="sidebar__link-active"
+        >Geometry</router-link>
+        <router-link
+          to="/measurement"
+          class="sidebar__link"
+          active-class="sidebar__link-active"
+        >Measurement</router-link>
+        <router-link
+          to="/secret-lab"
+          class="sidebar__link"
+          active-class="sidebar__link-active"
+        >Secret Lab</router-link>
+      </nav>
+    </div>
+
     <router-view></router-view>
   </div>
 </template>
@@ -31,10 +50,11 @@ export default {
 <style scoped>
 .sidebar {
   margin-top: 10vh;
-  width: 25%;
+  /* width: 25%; */
   position: relative;
 }
 .sidebar__menu {
+  font-weight: 700;
   width: 90%;
   list-style: none;
   border: 1px solid blueviolet;

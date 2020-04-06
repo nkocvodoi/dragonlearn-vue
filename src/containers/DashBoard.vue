@@ -1,14 +1,14 @@
 <template>
   <div id="dash-board">
     <TopMenu />
-    <div class="container">
+    <div class="container d-flex">
       <SideBarMenu />
     </div>
   </div>
 </template>
 
 <script>
-import SideBarMenu from "../components/sidebarmenu/SideBarMenu"
+import SideBarMenu from "../components/sidebarmenu/SideBarMenu";
 import TopMenu from "../components/topmenu/TopMenu";
 export default {
   components: {
@@ -19,4 +19,7 @@ export default {
 </script>
 
 <style scoped>
+#dash-board {
+  height: 100vh;
+}
 </style>

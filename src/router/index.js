@@ -1,23 +1,36 @@
-/* eslint-disable no-unused-vars */
-import route from "./config"
-import VueRouter from "vue-router";
-// import NProgress from "nprogress"
-// import "nprogress/nprogress.css"
+import UpAndDown from "../containers/UpAndDown"
+import Vue from 'vue'
+import Router from 'vue-router'
 
-const router = new VueRouter({
-  mode: "hash",
+
+Vue.use(Router)
+
+const router = new Router({
   linkActiveClass: "active",
-  routes: route
+  linkExactActiveClass: "active",
+  routes: [
+    {
+      path: "/numbers", component: null
+    },
+    {
+      path: "/operations", component: null
+    },
+    {
+      path: "/geometry",
+      component: UpAndDown,
+      children: [
+        {
+          path: ""
+        }
+      ]
+    },
+    {
+      path: "/measurement", component: null
+    },
+    {
+      path: "/secret-lab", component: null
+    }
+  ]
 })
-// router gards
-// router.beforeEach((to, from, next) => {
-//   NProgress.start()
-//   //auth route is authenticated
-//   next()
-// })
-
-// router.afterEach((to, from) => {
-//   NProgress.done()
-// })
 
 export default router
